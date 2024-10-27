@@ -1,0 +1,3 @@
+## Solution
+
+There is a white bus which is promiment in the picture. Taking a screenshot of it and reverse image searching tells us we are in Singapore. Searching for "Singapore bus 189 route" online gives us a [path](https://www.towertransit.sg/route/189) that the bus follows. Going through this path on google maps gives us the [location](https://www.google.com/maps/@1.3054947,103.7697375,3a,86.3y,44.53h,78.2t/data=!3m7!1e1!3m5!1smZJk7ewwPxUewuzvQCs4XQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D11.799836007219014%26panoid%3DmZJk7ewwPxUewuzvQCs4XQ%26yaw%3D44.525039980729126!7i16384!8i8192?coh=205410&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D).
