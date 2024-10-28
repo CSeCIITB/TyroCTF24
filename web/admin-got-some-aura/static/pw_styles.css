@@ -1,0 +1,164 @@
+body { 
+    margin: 0px;
+    background-image: url("back.jpg");
+    background-size:cover;
+    font-family: 'Poppins',sans-serif;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+header {
+    /* color:powderblue; */
+    background: linear-gradient(to right,#f8ab5e 0,#f36961 20%,#a176c8 40%,#759beb 60%,#65beb3 80%,#70db96 100%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-inline-end: auto;
+    font-size: 120%;
+}
+h1{
+    color:powderblue;
+    text-align:center;
+    font-size:300%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+}
+hr{
+    border:none;
+    color:rgb(35, 106, 238);
+    background-color: dodgerblue;
+    height:3px;
+}
+nav {
+    margin-top: 0;
+    text-align: center;
+}
+ul {
+    list-style-type:circle;
+}
+li {
+    display: inline;
+    margin-right: 20px;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+}
+footer {
+    font-size: 15px;
+    color:darkgoldenrod;
+    
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+a {
+    color:aquamarine;
+    text-decoration:none;
+    text-emphasis-color: dodgerblue;
+    cursor:url(Screenshot\ 2024-01-28\ at\ 7.04.30\ PM.png), auto;
+}
+h2 {
+    color:#ff4d4d;
+    padding: -2px;
+    font-size: 200%;
+    text-align: center; /* This centers the text */
+    margin-top: 0px;
+}
+#nonacad {
+        color:khaki;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        padding:0px;
+        font-size: 200%;
+        text-align: right;
+}
+p{
+    font-size: 20px;
+    color:bisque;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+#nonacadpara {
+    font-size: 20px;
+    color:bisque;
+    margin-left: 100px;
+    margin-right: 50px;
+    text-align: right;
+}
+#p{
+    display: block;
+    font-family: 'Poppins',sans-serif;
+    color:darksalmon;
+    text-align: center;
+    border:none;
+    border-bottom:3px #ffffff;
+    font-size: 20px;
+    padding:5px;
+}
+#intro{
+    text-align: center;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 450px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#response{
+    display: block;
+    font-family: 'Poppins',sans-serif;
+    color:darksalmon;
+    /* text-align: center; */
+    border:none;
+    /* border-bottom:3px #ffffff; */
+    font-size: 20px;
+    padding:5px;
+}
+
+.photo-container {
+    display: flex;                /* Enables flexbox */
+    justify-content: center;       /* Centers the images horizontally */
+    align-items: center;           /* Vertically aligns images in the center */
+    gap: 20px;                     /* Adds space between the images */
+}
+
+/* Style for each image */
+.photo-container img {
+    width: 150px;                  /* Set a fixed width for images */
+    height: auto;                  /* Keep the aspect ratio */
+    border-radius: 8px;             /* Optional: Add rounded corners to images */
+}
+
+/* #likecheck {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 450px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+#we_ball{
+    display: inline;
+    margin-right: 20px;
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+}
+

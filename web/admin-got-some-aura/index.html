@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSRF Demo - Auto Request</title>
+    <link rel="stylesheet" href="static/pw_styles.css">
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Welcome to Auracalculator.com!</h1>
+       
+    </header>
+
+    <div class="photo-container">
+        <img src="static/hritik.png" alt="Photo 1">
+        <img src="static/cilian.png" alt="Photo 2">
+        <img src="static/arjun.png" alt="Photo 3">
+        <img src="static/Aayush.jpg" alt="Photo 4">
+    </div>
+
+    <div id ="form">
+        <form id="likecheck" action="https://iitbtrustlab-backend-api.chals.io/api/fetch_local" method="POST">
+            <label for="usernames"><h2>Choose a user:</h2></label>
+            <select id="usernames" name="likeAPI" onchange="clearResponse()">
+                <option value="http://iitbtrustlab-ssrf.chals.io:3020/api/get_likes?username=hritik">Hritik Roshan</option>
+                <option value="http://iitbtrustlab-ssrf.chals.io:3020/api/get_likes?username=cilian">Cilian Murphy</option>
+                <option value="http://iitbtrustlab-ssrf.chals.io:3020/api/get_likes?username=arjun">Arjun Kapoor</option>
+                <option value="http://iitbtrustlab-ssrf.chals.io:3020/api/get_likes?username=Aayush">Rizzlord Aayush "Giga" Borkar</option>
+            </select>
+            <button type="submit" class="button" id="we_ll">Check Aura</button>
+            <div id="response"></div>
+        </form>
+        
+    </div>
+
+    
+
+<script>
+    function clearResponse() {
+        const responseDiv = document.getElementById("response");
+        responseDiv.innerHTML = "";  // Clear the response when the option is changed
+    }
+    document.getElementById("likecheck").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const selectedURL = document.getElementById("usernames").value; // Get the selected user URL
+        checkStock(this.getAttribute("method"), this.getAttribute("action"), new FormData(this)); // Use selected URL in fetch
+    });
+
+function checkStock(method, path, data) {
+    const retry = (tries) => tries == 0
+        ? null
+        : fetch(
+            path,
+            {
+                method,
+                headers: { 'Content-Type': window.contentType },
+                body: payload(data)
+            }
+          )
+            .then(res => res.status === 200
+                ? res.text().then(t => isNaN(t) ? t : "Aura : " + t)
+                : "Could not fetch stock levels!"
+            )
+            .then(res => document.getElementById("response").innerHTML = res)
+            .catch(e => retry(tries - 1));
+
+    retry(3);
+}
+</script>
+
+<script>
+    window.contentType = 'application/x-www-form-urlencoded';
+
+function payload(data) {
+    return new URLSearchParams(data).toString();
+}
+</script>
+
+</body>
+</html>
