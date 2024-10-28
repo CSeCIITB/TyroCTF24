@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Importance of Cybersecurity</title>
+    <style>
+      /* Heavy styling for layout */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1c1c; /* Dark background */
+        color: #f5f5f5; /* Light text color */
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #ff4444; /* Red color for heading */
+        margin-bottom: 20px;
+      }
+
+      .container {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        min-height: 400px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 400px;
+        border: 2px solid #ff4444; /* Red border for iframes */
+        border-radius: 5px;
+      }
+
+      .navigation {
+        margin: 20px 0;
+      }
+
+      .nav-button {
+        padding: 10px 20px;
+        color: white;
+        background-color: #ff4444; /* Red background for buttons */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 0 10px;
+      }
+
+      .nav-button:hover {
+        background-color: #e63939; /* Darker red on hover */
+      }
+
+      .form-container {
+        margin-top: 20px;
+      }
+
+      .form-container input[type="text"] {
+        padding: 10px;
+        width: 70%;
+        border: 1px solid #ddd; /* Light gray border for input */
+        border-radius: 4px;
+        margin-right: 10px;
+        background-color: #2a2a2a; /* Dark input background */
+        color: white; /* White text color in input */
+      }
+
+      .form-container button {
+        padding: 10px 20px;
+        color: white;
+        background-color: #ff4444; /* Red background for submit button */
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .form-container button:hover {
+        background-color: #e63939; /* Darker red on hover */
+      }
+
+      /* New style for displaying output */
+      #output {
+        margin-top: 20px;
+        padding: 10px;
+        color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Keeping your accounts secure.</h1>
+    <div class="container">
+      <iframe id="frame" src="/fetch"></iframe>
+    </div>
+    <div class="navigation">
+      <button class="nav-button" id="prevButton">Previous</button>
+      <button class="nav-button" id="nextButton">Next</button>
+    </div>
+    <div class="form-container">
+      <form id="urlForm" method="POST">
+        <label for="url" style="color: #f5f5f5">Want to send something funny to the author?</label><br />
+        <input type="text" name="url" id="url" placeholder="Enter URL" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- New div for displaying bot output -->
+    <div id="output"></div>
+
+    <script>
+      let currentFrame = 0;
+      let totalPosts = <%= totalPosts %>;
+      let iframe = document.getElementById("frame").contentWindow;
+
+      iframe.onload = () => {
+        iframe.postMessage({
+          method: "setHost",
+          argument: "<%= host %>",
+        }, "*");
+
+        iframe.postMessage({
+          method: "loadPage",
+          argument: currentFrame,
+        }, "*");
+
+        iframe.document.querySelector("body").style.color = "white";
+        iframe.document.querySelector("body").style.fontFamily = "Arial, sans-serif";
+      };
+
+      function showFrame(index) {
+        iframe.postMessage({
+          method: "loadPage",
+          argument: index,
+        }, "*");
+      }
+
+      document.getElementById("nextButton").addEventListener("click", () => {
+        currentFrame = (currentFrame + 1) % totalPosts;
+        showFrame(currentFrame);
+      });
+
+      document.getElementById("prevButton").addEventListener("click", () => {
+        currentFrame = (currentFrame - 1 + totalPosts) % totalPosts;
+        showFrame(currentFrame);
+      });
+
+      document.getElementById("urlForm").addEventListener("submit", async (event) => {
+        event.preventDefault(); // Prevent the default form submission
+        const url = document.getElementById("url").value;
+
+        try {
+          const response = await fetch('/visit', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ url }),
+          });
+
+          const result = await response.text();
+          document.getElementById("output").innerText = result;
+        } catch (error) {
+          document.getElementById("output").innerText = `Error: ${error.message}`;
+        }
+      });
+    </script>
+  </body>
+</html>

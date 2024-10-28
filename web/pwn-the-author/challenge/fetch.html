@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Page Loader</title>
+  </head>
+  <body>
+    <div id="content"></div>
+
+    <script>
+      let webHost = "";
+
+      window.addEventListener("message", async function (event) {
+        const { method, argument } = event.data;
+
+        if (method === "setHost") {
+          webHost = argument;
+          console.log(`webHost set to: ${webHost}`);
+        }
+
+        if (method === "loadPage") {
+          const url = new URL("/posts/" + argument, webHost);
+          console.log(`Fetching content from: ${url}`);
+
+          try {
+            const response = await fetch(url);
+            const text = await response.text();
+            document.getElementById("content").innerHTML = text;
+          } catch (error) {
+            document.getElementById("content").innerHTML =
+              "Failed to load content.";
+            console.error("Error fetching the page:", error);
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
