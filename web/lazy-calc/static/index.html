@@ -58,7 +58,7 @@
     async function calculate() {
       const expression = document.getElementById('expression').value;
 
-      const response = await fetch('https://iitbtrustlab-pycalctest.chals.io/calculate', {
+      const response = await fetch('http://127.0.0.1:8000/calculate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
