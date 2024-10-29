@@ -17,6 +17,11 @@ Submit your answer as tyroCTF{obtained_flag}
 
 - [chall](dist/chall)
 
-### Hints
->
->! When Decompilation does not work, Maybe its time to try something else?
+### Hint
+<details>
+<summary>Click To Reveal</summary>
+
+When decompilation does not work, maybe it is **time** to try something else.
+
+</details>
+
