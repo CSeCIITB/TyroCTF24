@@ -1,4 +1,4 @@
-## 2^136279841 - 1
+## More be better is?
 
 | Author         | Difficulty | Points | Solves | First Blood |
 | -------------- | ---------- | ------ | ------ | ----------- |

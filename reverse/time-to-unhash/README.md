@@ -1,4 +1,4 @@
-## 2^136279841 - 1
+## Time to Unhash
 
 | Author         | Difficulty | Points | Solves | First Blood |
 | -------------- | ---------- | ------ | ------ | ----------- |
