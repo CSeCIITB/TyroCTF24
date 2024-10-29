@@ -44,7 +44,7 @@ This repository contains official **source code** and **writeups** for challenge
 | -------------------------------------------------------- | ---------- | ------ | ------ |
 | [2^136279841 - 1](crypto/2^136279841-1/README.md)        | Easy       | 410    | 10     |
 | [Polynomial Fun](crypto/polynomial-fun/README.md)        | Medium       | 430    | 8    |
-| [More Be Better Is?](crypto/more-be-better-is?/README.md) | Hard       | 470    | 4    |
+| [More Be Better Is?](crypto/more-be-better-is/README.md) | Hard       | 470    | 4    |
 | [Haxxor's Trail](crypto/haxxors-trail/README.md)         | Hard       | 480    | 3    |
 
 ## Miscellaneous
