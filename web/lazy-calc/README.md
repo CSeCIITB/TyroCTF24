@@ -21,15 +21,10 @@ To deploy the system on your localhost, run the following command.
 
 ```
 docker build -t tyroctf .
-docker run -d -p 1337:1337 tyroctf
+docker run -d -p 8000:8000 tyroctf
 ```
 
 After deploying the container you can access it by running this command.
 
-```
-nc localhost 1337
-```
+[Click here to access the app](http://0.0.0.0:8000/)
 
-### Aliter
-
-Alternatively, you can simply take a look at the `chall.pyc` file and not worry about other files. Do note that the flag's path is hardcoded as an absolute one with respect to the container so you would get an error even with a `flag.txt` file in the CWD.
