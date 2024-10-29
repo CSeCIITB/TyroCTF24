@@ -1,4 +1,4 @@
-## Lazy Calc
+## Packet Enigma
 
 | Author | Difficulty | Points | Solves | First Blood    |
 | ------ | ---------- | ------ | ------ | -------------- | 
