@@ -13,8 +13,9 @@ Ughh, my prof wants me to make a calculator website using python.
 I'm too lazy to make all those operations work.
 Why reinvent the wheel? Surely I could make python do the calculation directly...
 After all, what could go wrong!
+</blockquote>
 
-# Deploying container on local system
+### Deploying container on local system
 
 To deploy the system on your localhost, run the following command.
 
@@ -29,6 +30,6 @@ After deploying the container you can access it by running this command.
 nc localhost 1337
 ```
 
-## Aliter
+### Aliter
 
 Alternatively, you can simply take a look at the `chall.pyc` file and not worry about other files. Do note that the flag's path is hardcoded as an absolute one with respect to the container so you would get an error even with a `flag.txt` file in the CWD.
