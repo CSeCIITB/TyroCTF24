@@ -1,8 +1,8 @@
 ## Packet Enigma
 
-| Author | Difficulty | Points | Solves | First Blood    |
-| ------ | ---------- | ------ | ------ | -------------- | 
-| RatanKokal and Niral  | Medium   | 440    | 7     | 1gn1te |
+| Author          | Difficulty | Points | Solves | First Blood |
+| --------------- | ---------- | ------ | ------ | ----------- |
+| Ratan and Niral | Medium     | 440    | 7      | M4D         |
 
 ---
 
