@@ -2,7 +2,7 @@
 
 | Author         | Difficulty | Points | Solves | First Blood |
 | -------------- | ---------- | ------ | ------ | ----------- |
-| aayushborkar14 | Hard       | 500    | 1      | 1gn1te      |
+| aayushborkar14 | Hard       | 500    | 1      | M4D         |
 
 ---
 

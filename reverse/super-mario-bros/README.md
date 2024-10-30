@@ -2,7 +2,7 @@
 
 | Author         | Difficulty | Points | Solves | First Blood  |
 | -------------- | ---------- | ------ | ------ | ------------ |
-| aayushborkar14 | Easy       | 420    | 9      | Ansh Agrawal |
+| aayushborkar14 | Easy       | 420    | 9      | byte_bandits |
 
 ---
 

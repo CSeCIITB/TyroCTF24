@@ -2,7 +2,7 @@
 
 | Author         | Difficulty | Points | Solves | First Blood |
 | -------------- | ---------- | ------ | ------ | ----------- |
-| aayushborkar14 | Easy       | 430    | 8      | s4ch1n      |
+| aayushborkar14 | Easy       | 430    | 8      | M4D         |
 
 ---
 

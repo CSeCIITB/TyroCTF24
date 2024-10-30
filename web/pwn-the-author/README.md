@@ -1,8 +1,8 @@
 ## Pwn the Author
 
-| Author         | Difficulty | Points | Solves | First Blood |
-| -------------- | ---------- | ------ | ------ | ----------- |
-| aayushborkar14 | Hard       | 500    | 1      | ab47        |
+| Author         | Difficulty | Points | Solves | First Blood  |
+| -------------- | ---------- | ------ | ------ | ------------ |
+| aayushborkar14 | Hard       | 500    | 1      | unsc_spartan |
 
 ---
 
