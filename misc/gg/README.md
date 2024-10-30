@@ -1,8 +1,8 @@
 ## That escalated quickly
 
-| Author | Difficulty | Points | Solves | First Blood    |
-| ------ | ---------- | ------ | ------ | -------------- | 
-| DarthVishnu  | Easy   | 450    | 6     | cicada3107 |
+| Author      | Difficulty | Points | Solves | First Blood |
+| ----------- | ---------- | ------ | ------ | ----------- |
+| DarthVishnu | Easy       | 450    | 6      | cicada3107  |
 
 ---
 
@@ -14,9 +14,8 @@ Bob refused to help Alice in the group project and instead went into hiding. For
 
 Flag Format is tyroCTF{x_coordinate,y_coordinate}, where both the coordinates must be correct upto 3 decimal places.
 
-
 </blockquote>
 
 ### Challenge Files
 
-- [360.jpg](dist/360.jpg)
+- [360.jpg](360.jpg)
