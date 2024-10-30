@@ -1,5 +1,10 @@
 ## Admin got some aura
 
+| Author         | Difficulty | Points | Solves | First Blood    |
+| -------------- | ---------- | ------ | ------ | -------------- |
+| Harsh and Niral | Medium       | 500    | 1     | M4D |
+
+---
 ### Description
 
 <blockquote>
