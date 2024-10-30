@@ -7,8 +7,8 @@
 ### Description
 
 <blockquote>
-
 Alice is quite confident in her encryption so she will give you two guesses as well as two ciphers. Can you find the flaw and break the encryption?
+</blockquote>
 
 ### Challenge Files
 
