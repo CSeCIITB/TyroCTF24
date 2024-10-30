@@ -1,8 +1,8 @@
 ## 2^136279841 - 1
 
-| Author         | Difficulty | Points | Solves | First Blood |
-| -------------- | ---------- | ------ | ------ | ----------- |
-| aayushborkar14 | Easy       | 410    | 10     | scepticlab  |
+| Author         | Difficulty | Points | Solves | First Blood    |
+| -------------- | ---------- | ------ | ------ | -------------- |
+| aayushborkar14 | Easy       | 410    | 10     | Nosimpsallowed |
 
 ---
 
@@ -14,4 +14,4 @@ Think you know your primes? Test your skills by picking two 1024-bit prime numbe
 
 ### Challenge Files
 
-- [m136279841.py](challenge/m136279841.py)
+- [m136279841.py](m136279841.py)
