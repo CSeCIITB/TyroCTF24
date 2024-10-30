@@ -37,6 +37,5 @@ if __name__ == "__main__":
     for key in range(1, 35):
         # Decrypt the message
         decrypted_message = decrypt(encrypted_message, key)
-
-        print(f"Key {key}: Decrypted message: {decrypted_message}")
-
+        if "tyroCTF" in decrypted_message:
+            print(f"Key {key}: Decrypted message: {decrypted_message}")
