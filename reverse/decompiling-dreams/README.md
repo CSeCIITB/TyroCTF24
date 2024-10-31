@@ -1,8 +1,8 @@
 ## Decompiling Dreams
 
-| Author | Difficulty | Points | Solves | First Blood    |
-| ------ | ---------- | ------ | ------ | -------------- |
-| Niral and  rennaMAhcuS | Easy   | 360    | 17   | 1gn1te |
+| Author                | Difficulty | Points | Solves | First Blood |
+| --------------------- | ---------- | ------ | ------ | ----------- |
+| Niral and rennaMAhcuS | Easy       | 360    | 17     | M4D         |
 
 ---
 
